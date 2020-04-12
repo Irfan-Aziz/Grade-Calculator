@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gradeSheet">
+            <div class="heading">
+                <p>Student</p>
+                <p>Grade</p>
+                <p>Calcy</p>
+                
+            </div>
+           
+            <div class="inputs">
+                <input type="text" placeholder="Web Programming" id="wp"><br>
+                <input type="text" placeholder="Maths" id="math"><br>
+                <input type="text" placeholder="Computer" id="cmp"><br>
+                <input type="text" placeholder="Physics" id="phy"><br>
+                <button onclick="clacy()">Show Percentage</button>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+   
+    <script>
+        const clacy=()=>{
+            const wp=document.getElementById("wp").value;
+        const math=document.getElementById("math").value
+        const cmp=document.getElementById("cmp").value;
+        const phy=document.getElementById("phy").value;
+        let total=parseFloat(wp)+parseFloat(math)+parseFloat(cmp)+parseFloat(phy);
+     
+        let avg=total/4;
+        
+        let grades='';
+            if(avg>79&&avg<101){
+                grades='A'
+                alert(`Total Marks: ${total} Average: ${avg} Grade: ${grades}`)
+            }else if(avg>59&&avg<80){
+                grades='B'
+                alert(`Total Marks: ${total} Average: ${avg} Grade: ${grades}`)
+            }else if(avg>39&&avg<60){
+                grades='C'
+                alert(`Total Marks: ${total} Average: ${avg} Grade: ${grades}`)
+            }else{
+                grades='F'
+                alert(`Total Marks: ${total} Average: ${avg} Grade: ${grades}`)
+            }
+
+        }
+    </script>
+</body>
+</html>

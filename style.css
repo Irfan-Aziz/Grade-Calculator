@@ -1,0 +1,94 @@
+body{
+ margin: 0;
+ background-color: black;
+}
+.container{
+    background-color: slategray;
+    height: 800px;
+    width:92%;
+    margin: 20px auto ;
+    overflow: hidden;
+
+}
+.gradeSheet{
+    width: 60%;
+    height: 400px;
+    border-radius: 10px;
+    background-color:rgba(0, 7, 4);
+    justify-content: center;
+    margin: 250px auto;
+    
+    overflow: auto;
+    box-shadow: 10px 10px 15px green;
+    overflow: hidden;
+}
+.heading{
+    margin-top:100px ;
+    height: 100px;
+    background-color:rgba(0, 7, 4);
+    width: 30%;
+    color: skyblue;;
+    margin-left: 150px;
+    border-left: 4px solid skyblue;
+    overflow: hidden;
+    transition: transform .2s;
+    float:left
+    
+
+}
+.heading:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+.heading p{
+    font-family: Arial;
+    font-weight: bolder;
+    margin-left: 22px;
+    margin-top: 8px;
+    
+    
+}
+.inputs{
+   width: 50%;
+   margin-left: 400px;
+   
+}
+.inputs input{
+    margin-top: 30px;
+    background-color: black;
+    color: cornsilk;
+    font-weight: bolder;
+    height: 20px;
+    width:80%;
+    outline:none;
+    border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+}
+.inputs input:focus{
+    outline: none;
+}
+.inputs button{
+    margin-top: 30px;
+    background-color: black;
+    color: skyblue;
+    font-weight: bolder;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    cursor: pointer;
+}
+.footer{
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    background-color:rgba(0, 7, 4);
+    
+    margin-top: 250px auto;
+    color:skyblue;
+    
+    box-shadow: 10px 10px 15px green;
+    overflow: hidden;
+}
